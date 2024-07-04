@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>about - Cogorin-Ibaba</title>
+    <meta property="og:title" content="about - Cogorin-Ibaba" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="cilogo.png" type="cilogo">
+    
+    <nav class="nav-bar">
+      <div class="search-bar">
+        <input type="search" placeholder="Search...">
+        <button class="search-btn">Search</button>
+      </div>
+      <button class="login-btn">Log In</button>
+    </nav>
+    <style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Nav Bar Styles */
+
+.nav-bar {
+  background-color: #333;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Search Bar Styles */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0.5em;
+  width: 100%;
+  max-width: 300px;
+}
+
+.search-bar input[type="search"] {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.search-bar .search-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-bar .search-btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Login Button Styles */
+
+.login-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #3e8e41;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .search-bar {
+    width: 100%;
+    max-width: none;
+  }
+  .login-btn {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar input[type="search"] {
+    font-size: 14px;
+  }
+  .search-bar .search-btn {
+    font-size: 14px;
+  }
+  .login-btn {
+    font-size: 14px;
+  }
+}
+    <style data-tag"default-style-sheet">
+      html {
+        font-family: Poppins;
+        font-size: 16px;
+      }
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+        fill: var(--dl-color-gray-black);
+      }
+      footer {
+        background-color: #004080; /* Dark blue color */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .content {
+        margin: 20px 0;
+      }
+      a {
+        color: #004080; /* Link color */
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .header {
+        background-color: #00274D; /* Dark blue background */
+        color: white; /* White text color */
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header .logo {
+        display: flex;
+        align-items: center;
+      }
+      .header .logo img {
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+      }
+      .header nav {
+        display: flex;
+        gap: 20px;
+      }
+      .header nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+      }
+      .header nav a:hover {
+        text-decoration: underline; /* Underline on hover for better UX */
+      }
+      .header .actions {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      .header .actions .search {
+        cursor: pointer;
+      }
+      .header .actions .login-button {
+        background-color: #0056b3; /* Darker blue for button */
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+      .header .actions .login-button:hover {
+        background-color: #004494; /* Darker shade on hover */
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 600px) {
+        .header nav {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .header .actions {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+      .footer {
+        background-color: #00274D; /* Dark blue background */
+        color: white; /* White text color */
+        padding: 10px 20px;  /* Reduced padding */
+        text-align: center;  /* Center text */
+        position: relative;
+      }
+      .footer .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5px 0;
+      }
+      .footer .column {
+        flex: 1;
+        max-width: 300px;
+        min-width: 150px;
+        margin: 10px 10px;
+      }
+      .footer img {
+        width: 30px;  /* Reduced size */
+        height: auto;
+        margin-left: 10px;
+      }
+      .footer .logos {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .footer h2, .footer h3 {
+        margin: 5px 0;
+        font-size: 1em;  /* Reduced font size */
+      }
+      .footer p {
+        margin: 5px 0;
+        font-size: 0.9em;  /* Reduced font size */
+      }
+      .footer a {
+        color: white; /* White text color for links */
+        text-decoration: none;
+      }
+      .footer a:hover {
+        text-decoration: underline; /* Underline on hover for better UX */
+      }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./about.css" rel="stylesheet" />
+
+      <div class="about-container">
+        <header data-thq="thq-navbar" class="about-navbar">
+          <div class="about-left">
+            <img
+              alt="image"
+              src="public/80184946292(1)-200h.png"
+              class="about-logo"
+            />
+          </div>
+          <a href="index.html" class="about-navlink">Home</a>
+          <a href="about.html" class="about-navlink1">About</a>
+          <a href="officials.html" class="about-navlink2">Officials</a>
+          <a href="population.html" class="about-navlink3">Population</a>
+          <a href="services.html" class="about-navlink4">Services</a>
+          <a href="news.html" class="about-navlink5">News</a>
+          <a href="establishment.html" class="about-navlink6">Establishment</a>
+          <div data-thq="thq-burger-menu" class="about-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="about-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" class="about-mobile-menu">
+            <div
+              data-thq="thq-mobile-menu-nav"
+              data-role="Nav"
+              class="about-nav"
+            >
+              <div class="about-container1">
+                <img
+                  alt="image"
+                  src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
+                  class="about-image"
+                />
+                <div data-thq="thq-close-menu" class="about-menu-close">
+                  <svg viewBox="0 0 1024 1024" class="about-icon2">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav
+                data-thq="thq-mobile-menu-nav-links"
+                data-role="Nav"
+                class="about-nav1"
+              >
+                <span class="about-text">Features</span>
+                <span class="about-text1">How it works</span>
+                <span class="about-text2">Prices</span>
+                <span class="about-text3">Contact</span>
+                <button class="about-book button button-main">
+                  <img
+                    alt="image"
+                    src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
+                    class="about-image1"
+                  />
+                  <span class="about-text4">Book an appointment</span>
+                </button>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <div class="about-container2">
+          <img
+            alt="image"
+            src="public/screenshot%202024-06-26%20182640-1500w.png"
+            class="about-image2"
+          />
+          <img
+            alt="image"
+            src="public/screenshot%202024-06-26%20182717-1500w.png"
+            class="about-image3"
+          />
+          <img
+            alt="image"
+            src="public/screenshot%202024-06-26%20182832-200h.png"
+            class="about-image4"
+          />
+          <div class="about-container3">
+            <img
+              alt="image"
+              src="public/external/8c668b_14b0c40d832c46fc9d2636ce11e594eb~mv2-700h-1500w.jpg"
+              class="about-image5"
+            />
+          </div>
+          <div class="about-container4">
+            <div class="about-container5">
+              <div class="about-container6">
+                <div class="about-container7"></div>
+              </div>
+            </div>
+            <img
+              alt="image"
+              src="public/screenshot%202024-06-26%20185104-700w.png"
+              class="about-image6"
+            />
+            <img
+              alt="image"
+              src="public/screenshot%202024-06-26%20185114-600h.png"
+              class="about-image7"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+</head>
+<body>
+  <style>
+    /* Basic CSS for styling the footer */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .footer {
+        background-color: #00274D; /* Dark blue background */
+        color: white; /* White text color */
+        padding: 10px 20px;  /* Reduced padding */
+        text-align: center;  /* Center text */
+        position: relative;
+    }
+    .footer .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5px 0;
+    }
+    .footer .column {
+        flex: 1;
+        max-width: 300px;
+        min-width: 150px;
+        margin: 10px 10px;
+    }
+    .footer img {
+        width: 30px;  /* Reduced size */
+        height: auto;
+        margin-left: 10px;
+    }
+    .footer .logos {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .footer h2, .footer h3 {
+        margin: 5px 0;
+        font-size: 1em;  /* Reduced font size */
+    }
+    .footer p {
+        margin: 5px 0;
+        font-size: 0.9em;  /* Reduced font size */
+    }
+    .footer a {
+        color: white; /* White text color for links */
+        text-decoration: none;
+    }
+    .footer a:hover {
+        text-decoration: underline; /* Underline on hover for better UX */
+    }
+</style>
+</head>
+<body>
+
+<!-- Your content here -->
+
+<footer class="footer">
+    <div class="row">
+        <div class="column">
+            <h2>Republic of the Philippines</h2>
+            <p>All content is in the public domain unless otherwise stated.</p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="column">
+            <h3>About Lopez</h3>
+            <p>The Municipality of Lopez (Tagalog: Bayan ng Lopez), is a 1st class municipality in the province of Quezon, Philippines. According to the 2020 census, it has a population of 94,657 people.</p>
+        </div>
+        <div class="column">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:cogorinibabalq@gmail.com">cogorinibabalq@gmail.com</a></p>
+            <p>Mobile: +639876543210</p>
+            <p>Landline: 2 345 6789</p>
+        </div>
+        <div class="column">
+            <h3>Government Links</h3>
+            <p><a href="#">Office of the President</a></p>
+            <p><a href="#">Office of the Vice President</a></p>
+            <p><a href="#">Senate of the Philippines</a></p>
+            <p><a href="#">House of Representatives</a></p>
+            <p><a href="#">Supreme Court</a></p>
+            <p><a href="#">Court of Appeals</a></p>
+            <p><a href="#">Sandigang Bayan</a></p>
+        </div>
+    </div>
+    
+    <div class="logos">
+        <img src="cilogo.png">
+        <img src="lopez.png">
+    </div>
+</footer>
+  </body>
+</html>

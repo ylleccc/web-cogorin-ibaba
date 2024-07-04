@@ -1,0 +1,221 @@
+.news-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.news-navbar {
+  width: 1146px;
+  height: 197px;
+  display: flex;
+  z-index: 100;
+  max-width: 1440px;
+  align-items: center;
+  justify-content: space-between;
+}
+.news-left {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news-logo {
+  width: 165px;
+  object-fit: cover;
+}
+.news-navlink {
+  font-style: normal;
+  font-family: "Exo 2";
+  font-weight: 900;
+  text-decoration: none;
+}
+.news-navlink1 {
+  font-style: normal;
+  font-family: "Exo 2";
+  font-weight: 900;
+  text-decoration: none;
+}
+.news-navlink2 {
+  font-style: normal;
+  font-family: "Exo 2";
+  font-weight: 900;
+  text-decoration: none;
+}
+.news-navlink3 {
+  font-style: normal;
+  font-family: "Exo 2";
+  font-weight: 900;
+  text-decoration: none;
+}
+.news-navlink4 {
+  font-style: normal;
+  font-family: "Exo 2";
+  font-weight: 900;
+  text-decoration: none;
+}
+.news-navlink5 {
+  font-style: normal;
+  font-family: "Exo 2";
+  font-weight: 900;
+  text-decoration: none;
+}
+.news-navlink6 {
+  font-style: normal;
+  font-family: "Exo 2";
+  font-weight: 900;
+  text-decoration: none;
+}
+.news-right {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.news-burger-menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.news-icon {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.news-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 1000;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.news-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.news-container1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.news-image {
+  height: 2rem;
+}
+.news-menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news-icon2 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.news-nav1 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.news-text {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.news-text1 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.news-text2 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.news-text3 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.news-book {
+  text-decoration: none;
+}
+.news-image1 {
+  width: 18px;
+  object-fit: cover;
+}
+.news-text4 {
+  font-family: Inter;
+}
+.news-container2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.news-link {
+  display: contents;
+}
+.news-image2 {
+  width: 200px;
+  object-fit: cover;
+  text-decoration: none;
+}
+.news-link1 {
+  display: contents;
+}
+.news-image3 {
+  width: 200px;
+  object-fit: cover;
+  text-decoration: none;
+}
+.news-link2 {
+  display: contents;
+}
+.news-image4 {
+  width: 200px;
+  object-fit: cover;
+  text-decoration: none;
+}
+@media(max-width: 1600px) {
+  .news-navbar {
+    width: 1140px;
+    height: 169px;
+  }
+  .news-container2 {
+    width: 100%;
+    height: 1394px;
+  }
+  .news-image2 {
+    width: 1548px;
+    height: 451px;
+    align-self: center;
+  }
+  .news-image3 {
+    width: 1500px;
+    height: 423px;
+    align-self: center;
+  }
+  .news-image4 {
+    width: 1528px;
+    height: 462px;
+    align-self: center;
+  }
+}
+@media(max-width: 991px) {
+  .news-navbar {
+    z-index: 1000;
+  }
+  .news-right {
+    display: none;
+  }
+  .news-burger-menu {
+    display: flex;
+    padding: var(--dl-space-space-unit);
+    border-radius: var(--dl-radius-radius-round);
+    background-color: #2461FF;
+  }
+  .news-icon {
+    fill: white;
+  }
+}
